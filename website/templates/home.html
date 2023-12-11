@@ -1,0 +1,347 @@
+{% extends "base.html" %} {% block title %}File-Repos{% endblock %}
+
+{% block contentt %} 
+
+<div class="container-fluid mb-5 ">
+    <div class="row">
+        <h3 id="h3" class=" text-center "
+            style="color: rgb(253,245,230); font-family: Georgia, 'Times New Roman', Times, serif;">
+            <strong class="shadow rounded ">Hyderbad IT KMS Repository</strong>
+        </h3>
+        
+      
+
+    <div class="btn-group btn-group-sm" role="group"  >
+        <a href='/'><button id="reloader"  class="btn btn-light active" ><i class="fas fa-chevron-circle-left"></i> <b>Datacenter Asset</b></button></a>
+        <a href='/home1'><button class="btn btn-outline-secondary disabled" ><b>Incedent tracker</b></button></a>
+        <a href='/home2'><button class="btn btn-outline-secondary disabled"  ><b>SOPs and Docs</b></button></a>
+        <!--a href='/home3'><button class="btn btn-outline-secondary disabled" ><b>ISO doc's</b></button></a -->
+        <a href='/home4'><button class="btn btn-outline-secondary disabled" ><b>DB backup and App-repo-bkp</b></button></a>
+    </div>
+  </div>
+</div>           
+
+
+
+  <div class="container-fluid text-left ">
+    <div class="row">
+      <div class="col-4 bg-green" >
+                  <p style="color: rgb(204,255,0);">Today Date: <span id="datetime"></span></p>
+                  
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                    </script>
+
+
+                    <div class="container " >
+                      <div class="row">
+
+                        <div class="card mb-3 bg-info" style="max-width: 440px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="\static\IMG\physicalserver.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="200" height="200">
+                              <h5 class="card-title lh-1 text-center">Physical Servers</h5>
+                              
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body lh-1">
+                                
+                                <ul class="list-group bg-dark text-white lh-1">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white  lh-1">
+                                    Server: ON 
+                                    <span class="badge bg-success square-pill lh-1">36</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white lh-1">
+                                    Server: OFF
+                                    <span class="badge bg-danger square-pill lh-1">6</span>
+                                  </li>
+                                  
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white lh-1">
+                                    Server: Total
+                                      <span class="badge bg-primary square-pill lh-1">44</span>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                    <div class="container" >
+                      <div class="row">
+
+                        <div class="card mb-3 bg-warning" style="max-width: 440px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="\static\IMG\test.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="110" height="80">
+                              
+                              <h5 class="card-title text-center">Virtual Servers</h5>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body bg-warning">
+                                <ul class="list-group bg-dark text-white">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white lh-1">
+                                    Server: ON 
+                                    <span class="badge bg-success square-pill lh-1">36</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white lh-1">
+                                    Server: OFF
+                                    <span class="badge bg-danger square-pill lh-1">41</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white lh-1">
+                                  Server: Total
+                                    <span class="badge bg-primary square-pill lh-1">77</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="container" >
+                      <div class="row">
+
+                        <div class="card mb-3 bg-secondary" style="max-width: 440px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 disabled">
+                              <img src="\static\IMG\firewall.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="120" height="100">
+                              
+                              <h5 class="card-title text-center">Firewalls/ISP/WiFi</h5>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body bg-secondary lh-1">
+                                <ul class="list-group bg-dark text-white">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                    Firewalls:  
+                                    <span class="badge bg-light square-pill text-black">4</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                    ISPs: 
+                                    <span class="badge  bg-light square-pill text-black">4</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                  WiFi Routers: 
+                                    <span class="badge  bg-light square-pill text-black">6</span>
+                                  </li>
+                                </ul>
+                              </div>                             
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    
+                      
+                </div>
+
+                   
+               
+              
+            
+
+
+
+          
+        
+                
+                    
+                                 
+
+
+                <div class="col-4 bg-green">
+                  <p style="color: rgb(204,255,0);">. <span id="datetime"></span></p>
+                 
+
+                  <div class="container " >
+                    <div class="row">
+
+                      <div class="card mb-3 bg-success disabled" style="max-width: 440px; ">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="\static\IMG\switch.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="120" height="100">
+                            
+                            <h5 class="card-title text-center">Network Switches K2 and L3 </h5>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body bg-sucess lh-1">
+                              <ul class="list-group bg-dark text-white">
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                  L2 Switches: ON 
+                                  <span class="badge bg-success square-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                  L3 Switches: OFF
+                                  <span class="badge bg-danger square-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                Switches: Total
+                                  <span class="badge bg-primary square-pill">10</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                
+                    <div class="container" >
+                      <div class="row">
+
+                        <div class="card mb-3 bg-danger disabled" style="max-width: 440px; ">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="\static\IMG\NAS.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="120" height="100">
+                              
+                              <h5 class="card-title text-center">Storage Devices</h5>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body bg-danger lh-1">
+                                <ul class="list-group bg-dark text-white">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                    NAS BOX:  
+                                    <span class="badge bg-success square-pill">3</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                    SAN SERVER:
+                                    <span class="badge bg-danger square-pill">2</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                  SAMBA/NFS Servers:
+                                    <span class="badge bg-primary square-pill">3</span>
+                                  </li>
+                                </ul>
+                              </div>                               
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="container" >
+                        <div class="row">
+                 
+                  <div class="card mb-3 bg-primary" style="max-width: 440px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="\static\IMG\virtual-1.png" class="img-fluid rounded-start" alt="..." alt="Logo" width="160" height="160">
+                        <h5 class="card-title text-center">Live Production Servers</h5>
+                        
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          
+                          <ul class="list-group bg-dark text-white lh-1">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                              MMU Servers 
+                              <span class="badge bg-primary square-pill">3</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                              TM/MMU Servers
+                              <span class="badge bg-danger square-pill">4</span>
+                            </li>
+                            
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                              Call Center : NACO
+                                <span class="badge bg-primary square-pill">1</span>
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                  Shared Services : ERP, JIRA
+                                    <span class="badge bg-primary square-pill">3</span>
+                                  </li>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                                    BIDA Services : ERP
+                                      <span class="badge bg-primary square-pill">2</span>
+                                    </li>
+                                </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-4 bg-green my-4">
+
+             
+                  <figure class="figure boarder-dark fs-1">
+                    <iframe src="/home8" height="400" width="480" title="Chat Bot"></iframe>                    
+                                      
+                </figure>
+
+                <div class="container-fluid text-left ">
+                  <div class="col bg-green text-white ">
+                    
+                
+                      <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Displaying DC Asset Excel file in html table
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable bg-black">
+                    <div class="modal-content bg-black">
+                      <div class="modal-header bg-black">
+                        <h5 class="modal-title " id="staticBackdropLabel">DC Asset Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body bg-dark ">
+                        <figure class="figure text-wrap fst-italic bg-black">
+                          <iframe src="/home6" height="1200" width="1200" title="Iframe Example"></iframe>                    
+                          <figcaption class="figure-caption fs-6 ">Click below button to get graph</figcaption>
+                      </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Download excel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                  
+                </div>
+                </div> 
+                </div>  
+                </div>
+                               
+            </div>
+          </div>
+         
+        
+                   
+           
+{% endblock %}
+
+{% block contentt1 %} 
+
+<!--
+<label for="exampleDataList" class="form-label text-white">Datalist example</label>
+<input class="form-control " list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="San Francisco">
+  <option value="New York">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+  
+-->
+
+{% endblock %}
+  

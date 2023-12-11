@@ -1,0 +1,36 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>{% block title %}Home{% endblock %}</title>
+
+</head>
+
+<body>
+<table class="table table-secondary table-striped table-sm table-hover text-start lh-1 fst-normal"> 
+  <tbody> 
+    {% for value in myData%} 
+    <tr> 
+      <td>{{ value[0] }}</td> 
+      <td>{{ value[1] }}</td> 
+      <td>{{ value[2] }}</td> 
+      <td>{{ value[3] }}</td> 
+      <td>{{ value[4] }}</td> 
+      <td>{{ value[5] }}</td> 
+      <td>{{ value[6] }}</td> 
+      <td>{{ value[7] }}</td> 
+      <td>{{ value[8] }}</td> 
+      <td>{{ value[9] }}</td> 
+      <td>{{ value[10] }}</td> 
+      <td>{{ value[11] }}</td> 
+      <td>{{ value[12] }}</td> 
+      <td>{{ value[13] }}</td> 
+      
+    </tr> 
+    {% endfor %} 
+  </tbody> 
+</table> 
+</body> 

@@ -1,0 +1,69 @@
+{% extends "base.html" %} {% block title %}ISO{% endblock %}
+
+{% block contentt %} 
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h3 id="h3" class=" text-center "
+            style="color: rgb(25, 25, 112); font-family: Georgia, 'Times New Roman', Times, serif;">
+            <strong class="shadow rounded ">Hyderbad IT KMS Repository</strong>
+        </h3>
+        
+      </div>
+    </div>
+    <div class="btn-group btn-group-sm" role="group" >
+      <a href='/'><button class="btn btn-outline-secondary" type="button"><b>Datacenter Asset</b></button></a>
+      <a href='/home1'><button class="btn btn-outline-secondary" type="button" ><b>Incedent tracker </b></button></a>
+      <a href='/home2'><button class="btn btn-outline-secondary" type="button" ><b>SOPs and Docs</b></button></a>
+      <!--a href='/home3'><button id="reloader" type="button" class="btn btn-outline-info active"><i class="fas fa-chevron-circle-left"></i><b>ISO doc's </b></button></a-->
+      <a href='/home4'><button class="btn btn-outline-secondary" ><b>DB backup and App-repo-bkp</b></button></a>
+    </div>
+
+             
+
+{% endblock %}
+
+{% block contentt1 %} 
+
+
+<div class="container-fluid">
+  
+
+          <div class="container text-left ">
+            <div>
+              <div class="container text-left ">
+                
+                <div class="col bg-green">
+
+                  <p style="color: rgb(25, 25, 112);">Today Date: <span id="datetime"></span></p>
+
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                    </script>
+                <figure class="figure">
+                    <iframe src="http://117.245.141.35:8084" height="600" width="1000" title="Iframe Example"></iframe>                    
+                    <iframe src="http://192.168.45.189:8084/" height="600" width="1000" title="Iframe Example"></iframe>
+                    <figcaption class="figure-caption">Click below button to get graph</figcaption>
+                </figure>
+                <figure class="figure">
+                    
+                 
+                    
+            </div>
+            </div>
+          
+              <div class="col bg-green">
+              
+          </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+  

@@ -1,0 +1,71 @@
+{% extends "base.html" %} {% block title %}Tracker{% endblock %}
+
+{% block contentt %} 
+
+<link href="/path/to/cdn/bootstrap-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+<script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="dist/css/videoplayer.min.css" />
+<script src="dist/js/videoplayer.min.js"></script>
+
+<div class="videoplayer" id="myPlayer">
+    <div class="ratio ratio-21x9 bg-dark">
+      <video class="video" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4#t=9"></video>
+    </div>
+    <div class="controls controls-dark">
+      <button class="btn btn-lg btn-video-playpause" data-bs-toggle="tooltip" title="Play Video" type="button"><i class="bi bi-play-fill"></i><i class="bi bi-pause-fill d-none"></i></button>
+      <div class="px-1 w-100">
+        <div class="progress w-100">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <button class="btn btn-lg btn-video-pip" title="Play picture in picture"><i class="bi bi-pip"></i></button><button class="btn btn-lg btn-video-fullscreen" title="Full Screen"><i class="bi bi-arrows-fullscreen"></i></button>
+      <div class="dropup">
+        <button class="btn btn-lg btn-video-volume" data-bs-toggle="dropdown" title="Volume"><i class="bi bi-volume-mute-fill"></i></button>
+        <div class="dropdown-menu dropdown-menu-end dropup-volume dropdown-menu-dark">
+          <input class="form-range form-range-volume" type="range">
+        </div>
+      </div>
+      <div class="dropup">
+        <button class="btn btn-lg" data-bs-toggle="dropdown" title="More..."><i class="bi bi-three-dots-vertical"></i></button>
+        <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+          <a class="dropdown-item" href="#"><i class="bi bi-info-circle-fill"></i> About</a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="title">
+        Video Title
+      </div>
+    </div>
+  </div>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    var myPlayer = new BootstrapVideoplayer('myPlayer',{
+        selectors:{
+          video: '.video'
+        }
+    })
+  })
+  document.addEventListener('DOMContentLoaded', () => {
+    var myPlayer = new BootstrapVideoplayer('myPlayer',{
+        selectors:{
+          video: '.video',
+          playPauseButton: '.btn-video-playpause',
+          playIcon: '.bi-play-fill',
+          pauseIcon: '.bi-pause-fill',
+          progress: '.progress',
+          progressbar: '.progress-bar',
+          pipButton: '.btn-video-pip',
+          fullscreenButton: '.btn-video-fullscreen',
+          volumeRange: '.form-range-volume'
+        }
+    })
+  })
+
+
+  <div class="controls controls-dark auto-hide">
+    ...
+  </div>
+{% endblock %}

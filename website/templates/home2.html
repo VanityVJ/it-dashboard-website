@@ -1,0 +1,199 @@
+{% extends "base.html" %} {% block title %}SOPs{% endblock %}
+
+{% block contentt %} 
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h3 id="h1" class=" text-center "
+            style="color: rgb(25, 25, 112); font-family: Georgia, 'Times New Roman', Times, serif;">
+            <strong class="shadow rounded ">Hyderbad IT KMS Repository</strong>
+        </h3>
+        
+      </div>
+    </div>
+    <div class="btn-group btn-group-sm" role="group" >
+      <a href='/'><button class="btn btn-outline-secondary" type="button"><b>Datacenter Asset</b></button></a>
+      <a href='/home1'><button class="btn btn-outline-secondary"  ><b>Incedent tracker </b></button></a>
+      <a href='/home2'><button id="reloader" type="button" class="btn btn-outline-info active"><i class="fas fa-chevron-circle-left"></i><b>SOPs and Docs </b></button></a>
+      
+      <!--a href='/home3'><button class="btn btn-outline-secondary" ><b>ISO doc's</b></button></a-->
+      <a href='/home4'><button class="btn btn-outline-secondary" ><b>DB backup and App-repo-bkp</b></button></a>
+  </div>
+        
+
+
+             
+
+{% endblock %}
+
+{% block contentt1 %} 
+
+
+<div class="container-fluid">
+  
+  <div class="row">
+        
+            
+                  <p style="color: rgb(25, 25, 112);">Today Date: <span id="datetime"></span></p>
+
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                    </script>
+
+                    <div class="card bg-black" style="width: 22rem;">
+                     
+                      <div class="card-body bg-black">
+                        <video width="320" height="240" controls src="\static\vidoes\Veeam backup over view-KT.mkv"></video>
+                        <p class="card-text text-light">Veeam Backup-KT</p>
+                      </div>
+                    </div>
+                    <div class="card bg-black" style="width: 22rem;">
+                     
+                      <div class="card-body bg-black">
+                        <video width="320" height="240" controls src="\static\vidoes\Secure-Restore.mkv"></video>
+                        <p class="card-text text-light">How to Restore VM backup securely</p>
+                      </div>
+                    </div>
+                    <div class="card bg-black" style="width: 22rem;">
+                     
+                      <div class="card-body bg-black">
+                        <video width="320" height="240" controls src="\static\vidoes\Backup Verification.mkv"></video>
+                        <p class="card-text text-light">VM Backup Verification</p>
+                      </div>
+                    </div>
+                    
+                    <div class="card bg-black" style="width: 22rem;">
+                     
+                      <div class="card-body bg-black">
+                        <video width="320" height="240" controls src="\static\vidoes\3-2-1-1 backup plan.mkv"></video>
+                        <p class="card-text text-light">3-2-1-1 backup plan</p>
+                      </div>
+                    </div>
+
+                    <div class="container-fluid">
+  
+                      <div class="row">
+                        <div class="card bg-black" style="width: 22rem;">
+                    <div class="card-body bg-black">
+                      <video width="320" height="240" controls src="\static\vidoes\DRS-plan for veeam.mkv"></video>
+                      <p class="card-text text-light">DRS-plan for veeam</p>
+                    </div>
+                  </div>
+                  <div class="card bg-black" style="width: 22rem;">
+                  <div class="card-body bg-black">
+                    <video width="320" height="240" controls src="\static\vidoes\How to add window-hyper-v server to Veeam backup and do One time archive backup of VM.mkv"></video>
+                    <p class="card-text text-light">How to add window-hyper-v server to Veeam backup and do One time archive backup of VM</p>
+                  </div>
+                </div>
+                <div class="card bg-black" style="width: 22rem;">
+                <div class="card-body bg-black">
+                  <video width="320" height="240" controls src="\static\vidoes\Installing Docker and Docker-compose-in Ubuntu 20.mkv"></video>
+                  <p class="card-text text-light">Installing Docker and Docker-compose-in Ubuntu 20</p>
+                </div>
+              </div>
+              <div class="card bg-black" style="width: 22rem;">
+                <div class="card-body bg-black">
+                  <video width="320" height="240" controls src="\static\vidoes\Installing Veeam Backup replicaion on Windows.mkv"></video>
+                  <p class="card-text text-light">Installing Veeam Backup replicaion on Windows</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="container-fluid">
+  
+            <div class="row">
+
+          <div class="card bg-black" style="width: 22rem;">
+                     
+            <div class="card-body bg-black">
+              <video width="320" height="240" controls src="\static\vidoes\Creating VM and Ubuntu 20 installation.mkv"></video>
+              <p class="card-text text-light">Creating VM and Ubuntu 20 installation</p>
+            </div>
+          </div>
+          <div class="card bg-black" style="width: 22rem;">
+                     
+            <div class="card-body bg-black">
+              <video width="320" height="240" controls src="\static\vidoes\Instant-recovery-of-VM.mkv"></video>
+              <p class="card-text text-light">Instant-recovery-of-VM</p>
+            </div>
+          </div>
+          <div class="card bg-black" style="width: 22rem;">
+                     
+            <div class="card-body bg-black">
+              <video width="320" height="240" controls src="\static\vidoes\Trusted Immutiable storages.mkv"></video>
+              <p class="card-text text-light">Trusted Immutiable storages</p>
+            </div>
+          </div>
+          <div class="card bg-black" style="width: 22rem;">
+                     
+            <div class="card-body bg-black">
+              <video width="320" height="240" controls src="\static\vidoes\Instant-recovery-of-VM.mkv"></video>
+              <p class="card-text text-light">Instant-recovery-of-VM</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-fluid">
+  
+        <div class="row">
+
+      <div class="card bg-black" style="width: 22rem;">
+                 
+        <div class="card-body bg-black">
+          <video width="320" height="240" controls src="\static\vidoes\set-time-date-region-in-ubuntu.mkv"></video>
+          <p class="card-text text-light">set-time-date-region-in-ubuntu</p>
+        </div>
+      </div>
+      <div class="card bg-black" style="width: 22rem;">
+                 
+        <div class="card-body bg-black">
+          <video width="320" height="240" controls src="\static\vidoes\Strating ABDM-services.mkv"></video>
+          <p class="card-text text-light">Strating ABDM-services</p>
+        </div>
+      </div>
+      <div class="card bg-black" style="width: 22rem;">
+                 
+        <div class="card-body bg-black">
+          <video width="320" height="240" controls src="\static\vidoes\VM-ESXI-VM creation.mkv"></video>
+          <p class="card-text text-light">VM-ESXI-VM creation</p>
+        </div>
+      </div>
+      <div class="card bg-black" style="width: 22rem;">
+                 
+        <div class="card-body bg-black">
+          <video width="320" height="240" controls src="\static\vidoes\Zabbix-adding-Servers.mkv"></video>
+          <p class="card-text text-light">Zabbix-adding-Servers</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+                  </div>
+                </div>
+                <figure class="figure">
+                    <iframe src="http://117.245.141.35:8083" height="600" width="1000" title="Iframe Example"></iframe>                    
+                    <iframe src="http://192.168.7.10:8083/" height="600" width="1000" title="Iframe Example"></iframe>
+                    <figcaption class="figure-caption">Click below button to get graph</figcaption>
+                </figure>
+                <figure class="figure">
+                    
+                 
+                    
+            </div>
+            </div>
+          
+  </div>
+</div>
+
+
+{% endblock %}
+  

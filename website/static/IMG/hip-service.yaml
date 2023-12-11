@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hipservice
+spec:
+  selector:
+    matchLabels:
+      app: hipservice
+    template:
+      metadata:
+        labels:
+          app: hipservice
+      spec:
+        containers:
+        - name: hipservice
+          image: hip-service_hip
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+          - containerPort: 8080
+

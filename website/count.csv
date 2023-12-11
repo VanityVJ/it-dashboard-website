@@ -1,0 +1,8 @@
+Server Type,Type,Number Of Servers
+DEV,VM,11
+Host-VM-ESXI,VM,10
+Host-Winodws-HyperV,VM,12
+NA,PHY,22
+Non-Prod,VM-PHY,36
+PROD,VM,50
+LIVE PROD,PHY,13

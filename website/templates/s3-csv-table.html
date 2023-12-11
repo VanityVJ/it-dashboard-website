@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}File{% endblock %}
+
+{% block contentt %} 
+
+<table id="demo">
+    {% for row in csv %}
+      <tr>
+      {% for col in row %}
+      <td>{{ col }}</td>
+      {% endfor %}
+      </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
